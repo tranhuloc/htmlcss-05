@@ -148,7 +148,7 @@ a {
 .hero__inner {
     display: flex;
     align-items: center;
-    column-gap: 60px;
+    column-gap: 160px;
 }
 /* Hero content */
 .hero-content {
@@ -215,6 +215,11 @@ a {
 
 .hero-content__btn {
     background-color: #7264D6;
+    transition: .3s;
+}
+
+.hero-content__btn:hover {
+    scale: 0.9;
 }
 
 .hero-content__attention {
@@ -222,4 +227,100 @@ a {
     font-weight: 600;
     line-height: 1.71;
     color: #696D76;
+}
+
+/* Hero media */
+.hero__media {
+    position: relative;
+}
+
+.hero-white,
+.hero-green,
+.hero-red {
+    position: absolute;
+}
+
+.hero-white {
+    top: 113px;
+    left: -100px;
+    display: flex;
+    align-items: center;
+    padding: 14px 10px;
+    width: 174px;
+    height: 46px;
+    border-radius: 6px;
+    box-shadow: 0px 10px 20px 0px #00000012;
+    background-color: #fff;
+}
+
+.hero-white__title {
+    margin-left: 8px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #31456A;
+}
+
+.hero-white__price {
+    margin-left: 19px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #4AB5E3;
+}
+
+.hero-green {
+    bottom: 61px;
+    right: -74px;
+    display: flex;
+    align-items: center;
+    column-gap: 11px;
+    width: 124px;
+    height: 68px;
+    border-radius: 10px;
+    padding: 20px 15px;
+    background-color: #439F90;
+}
+
+.hero-green__money {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #fff;
+}
+
+.hero-green__desc {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.hero-red {
+    top: 127px;
+    right: -174px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    padding: 30px 33px;
+    background-color: #DA6464;
+}
+
+.hero-red__title {
+    font-size: 4.4rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.hero-red__committed {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #fff;
 }
